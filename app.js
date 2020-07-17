@@ -1,11 +1,12 @@
-const metaShareContainer = document.querySelector('.links');
-const shareBox = document.querySelector('.links-icons');
+function myFunction() {
 
-metaShareContainer.addEventListener('mouseover', (e)=> {
-    shareBox.classList.add('showsharebox');
-    shareBox.addEventListener('mouseleave', () => {
-        shareBox.classList.remove('showsharebox');
-    })
-});
-    
-    
+    var link = document.querySelector('.links');
+  console.log("share");
+  
+  if (link.style.display === "none") {
+    link.style.display = "block";
+    link.style.display = "flex";
+  } else {
+    link.style.display = "none";
+  }
+} 
